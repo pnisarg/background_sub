@@ -1,0 +1,7 @@
+set(PNAME bgsub)
+set(FNAME bgsub.cpp)
+cmake_minimum_required(VERSION 2.6)
+project(${PNAME})
+find_package(OpenCV REQUIRED)
+add_executable(${PNAME} ${FNAME})
+target_link_libraries(${PNAME} ${OpenCV_LIBS})
